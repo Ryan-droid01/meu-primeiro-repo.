@@ -1,37 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rodrigo · Portfólio</title>
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- CSS separado -->
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- ========== CABEÇALHO ========== -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-nome">Rodrigo</span>
+                <span class="logo-titulo">Desenvolvedor</span>
+            </div>
 
-    <h1>Currículo</h1>
-        <img src="Foto-perfil.jpg" alt="">
-        <h1><strong>DADOS PESSOAIS</strong></h1>
-            <ul>
-                <li><strong>Nome:</strong> Rodrigo</li>
-                <li><strong>Data nasc:</strong> 01/01/1988</li>
-                <li><strong>Bairro:</strong> Velha</li>
-                <li><strong>Cidade:</strong> Blumenal</li>
-                <li><strong>CPF:</strong> 123.456.789-01</li>
-                <li><strong>Est. Civil:</strong> Solteiro</li>
-                <li><strong>Número:</strong> 484</li>
-                <li><strong>CEP:</strong> 12.345-000</li>
-            </ul>
-    <h1><Strong>QUALIFICAÇÃO PROISSIONAL</Strong></h1>
-        <ul>
-            <li><Strong>Áreas de atuação:</Strong> Engenheiro de prompt</li>
-            <li><strong>Especialidade: </strong> Conversar com uma inteligência artificial</li>
-        </ul>
-    
-    <h1><strong>FORMAÇÃO ACADÊMICA</strong></h1>
-        <ul>
-            <li><strong>Graduação Máxima:</strong> Mestrado em engenharia de prompt</li>
-            <li>Instituição: Bananeiros prompt</li>
-            <li>Data de início: 01/06/2021</li>
-            <li>Data de conclusão: 11/12/2024</li>
-        </ul>
+            <!-- Navegação -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <!-- Botão tema -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </nav>
+
+            <!-- Menu hambúrguer (mobile) -->
+            <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- ========== SEÇÃO HOME ========== -->
+    <section id="home" class="section home-section">
+        <div class="container home-container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1 class="home-title">Olá, eu sou <span>Rodrigo</span></h1>
+                    <p class="home-subtitle">Engenheiro de Prompt &amp; Criador de Experiências</p>
+                    <p class="home-desc">
+                        Transformo ideias em diálogos inteligentes com IAs. 
+                        Especialista em extrair o melhor das máquinas para soluções humanas.
+                    </p>
+                    <div class="home-buttons">
+                        <a href="curriculo.pdf" download class="btn btn-primary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                        <a href="#contato" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> Contato
+                        </a>
+                    </div>
+                </div>
+                <div class="home-image">
+                    <img src="Foto-perfil.jpg" alt="Foto de perfil de Rodrigo" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SEÇÃO SOBRE ========== -->
+    <section id="sobre" class="section sobre-section">
+        <div class="container">
+            <h2 class="section-title">Sobre mim</h2>
+            <div class="sobre-grid">
+                <!-- Dados pessoais -->
+                <div class="sobre-dados card">
+                    <h3><i class="fas fa-user"></i> Dados Pessoais</h3>
+                    <ul class="dados-lista">
+                        <li><strong>Nome:</strong> Rodrigo</li>
+                        <li><strong>Data nasc:</strong> 01/01/1988</li>
+                        <li><strong>Bairro:</strong> Velha</li>
+                        <li><strong>Cidade:</strong> Blumenal</li>
+                        <li><strong>CPF:</strong> 123.456.789-01</li>
+                        <li><strong>Est. Civil:</strong> Solteiro</li>
+                        <li><strong>Número:</strong> 484</li>
+                        <li><strong>CEP:</strong> 12.345-000</li>
+                    </ul>
+                </div>
+                <!-- Qualificação profissional -->
+                <div class="sobre-qualif card">
+                    <h3><i class="fas fa-briefcase"></i> Qualificação Profissional</h3>
+                    <ul class="qualif-lista">
+                        <li><strong>Áreas de atuação:</strong> Engenheiro de prompt</li>
+                        <li><strong>Especialidade:</strong> Conversar com uma inteligência artificial</li>
+                    </ul>
+                    <h3><i class="fas fa-graduation-cap"></i> Formação Acadêmica</h3>
+                    <ul class="formacao-lista">
+                        <li><strong>Graduação Máxima:</strong> Mestrado em engenharia de prompt</li>
+                        <li>Instituição: Bananeiros prompt</li>
+                        <li>Data de início: 01/06/2021</li>
+                        <li>Data de conclusão: 11/12/2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SEÇÃO SERVIÇOS ========== -->
+    <section id="servicos" class="section servicos-section">
+        <div class="container">
+            <h2 class="section-title">Serviços</h2>
+            <div class="servicos-grid">
+                <div class="servico-item card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Engenharia de Prompt</h3>
+                    <p>Desenvolvimento de prompts otimizados para obter respostas precisas e criativas de modelos de IA.</p>
+                </div>
+                <div class="servico-item card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Consultoria em IA</h3>
+                    <p>Orientação sobre como integrar e utilizar IAs generativas em processos criativos e empresariais.</p>
+                </div>
+                <div class="servico-item card">
+                    <i class="fas fa-code"></i>
+                    <h3>Prototipagem Rápida</h3>
+                    <p>Criação de protótipos interativos e provas de conceito usando ferramentas de IA e desenvolvimento ágil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SEÇÃO CONTATO ========== -->
+    <section id="contato" class="section contato-section">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contato-wrapper">
+                <div class="contato-info card">
+                    <h3><i class="fas fa-address-card"></i> Informações</h3>
+                    <p><i class="fas fa-envelope"></i> rodrigo@email.com</p>
+                    <p><i class="fas fa-phone"></i> (47) 99999-9999</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Blumenal, SC</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contato-form card">
+                    <h3><i class="fas fa-paper-plane"></i> Envie uma mensagem</h3>
+                    <input type="text" placeholder="Seu nome" required />
+                    <input type="email" placeholder="Seu e-mail" required />
+                    <textarea rows="4" placeholder="Sua mensagem..." required></textarea>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== RODAPÉ ========== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rodrigo · Feito com <i class="fas fa-heart" style="color: #e74c3c;"></i> e muita IA</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript (tema, menu mobile) -->
+    <script src="script.js"></script>
 </body>
 </html>
