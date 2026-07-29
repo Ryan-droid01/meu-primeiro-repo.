@@ -26,10 +26,10 @@
     --bg-header: #f0f7f5ee;
     --text-primary: #1a2b2a;
     --text-secondary: #2a4a44;
-    --text-muted: #4a6b64;
-    --accent: #2e8b57;
-    --accent-dark: #1d6b3a;
-    --accent-hover: #3cb371;
+    --text-muted: #6b6b4a;
+    --accent: #fa9522;
+    --accent-dark: #b36e06;
+    --accent-hover: #fda219;
     --border-color: #c0d6d0;
     --shadow: 0 8px 24px rgba(0, 40, 30, 0.12);
 }
